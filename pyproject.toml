@@ -1,0 +1,40 @@
+[project]
+name = "dawndine"
+version = "0.1.0"
+description = "DawnDine · 校园食堂后勤食安助手（LangGraph + Gradio）"
+readme = "README.md"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+    "langgraph>=0.2.0,<0.4.0",
+    "langchain>=0.3.27,<0.4.0",
+    "langchain-core>=0.3.0,<0.4.0",
+    "langchain-openai>=0.2.0,<0.4.0",
+    "langchain-community>=0.3.0,<0.4.0",
+    "langchain-chroma>=0.2.0,<0.3.0",
+    "langchain-text-splitters>=0.3.0,<0.4.0",
+    "chromadb>=1.0.20,<2.0.0",
+    "gradio>=5.0.0,<6.0.0",
+    "pillow>=10.0.0,<13.0.0",
+    "pydantic>=2.7.0,<3.0.0",
+    "python-dotenv>=1.0.0,<2.0.0",
+    "dashscope>=1.20.0,<3.0.0",
+    "uuid>=1.30",
+]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.ruff.lint.per-file-ignores]
+# 系统提示词需要保持原文换行，长句不拆行。
+"config/prompts.py" = ["E501"]

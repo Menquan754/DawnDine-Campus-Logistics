@@ -1,0 +1,52 @@
+# 环境与密钥
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+
+# Python 缓存
+__pycache__/
+*.py[cod]
+*$py.class
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# PyCharm / 编辑器（保留运行配置）
+.idea/*
+!.idea/runConfigurations/
+!.idea/runConfigurations/*.xml
+.vscode/
+
+# 运行产物
+watermarked/*
+!watermarked/.gitkeep
+uploads/*
+!uploads/.gitkeep
+data/chroma/
+data/templates/*.json
+!data/templates/.gitkeep
+data/*.db
+data/*.db-wal
+data/*.db-shm
+*.log
+logs/
+.gradio/
+
+# 操作系统
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# git 基线补齐（2026-10-28）
+*.pyc
+.idea/
+uploads/
+watermarked/
+data/*.db*
+!data/templates/*.json
+.workbuddy/
+
