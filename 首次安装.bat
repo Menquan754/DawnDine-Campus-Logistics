@@ -1,3 +1,3 @@
 @echo off
-call "%~dp0scripts\windows\首次安装.bat"
+call "%~dp0scripts\windows\setup.bat"
 exit /b %errorlevel%
