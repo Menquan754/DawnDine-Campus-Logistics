@@ -1,7 +1,11 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
 [project]
 name = "dawndine"
-version = "0.1.0"
-description = "DawnDine · 校园食堂后勤食安助手（LangGraph + Gradio）"
+version = "2.5.0"
+description = "DawnDine · 校园后勤助手（食堂食安 + 后勤全域 · LangGraph + Gradio）"
 readme = "README.md"
 requires-python = ">=3.11,<3.13"
 dependencies = [
@@ -18,11 +22,17 @@ dependencies = [
     "pydantic>=2.7.0,<3.0.0",
     "python-dotenv>=1.0.0,<2.0.0",
     "dashscope>=1.20.0,<3.0.0",
-    "uuid>=1.30",
+    "pandas>=2.3.3",
+    "openpyxl>=3.1.5",
+    "networkx>=3.6.1",
+    "pyvis>=0.3.2",
 ]
 
-[tool.uv]
-package = false
+[project.scripts]
+dawndine = "dawndine.__main__:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/dawndine"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
@@ -31,10 +41,16 @@ addopts = "-q"
 [tool.ruff]
 line-length = 100
 target-version = "py311"
+src = ["src", "."]
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "UP", "B"]
 
 [tool.ruff.lint.per-file-ignores]
 # 系统提示词需要保持原文换行，长句不拆行。
-"config/prompts.py" = ["E501"]
+"src/dawndine/prompts.py" = ["E501"]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+]

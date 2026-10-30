@@ -73,83 +73,9 @@
     },
     "updated_at": "2026-10-28 12:56:22"
   },
-  "default": {
-    "template_name": "default",
-    "source_image": "D:\\DawnDine --Campus Canteen Logistics Agent\\uploads\\sample_20261028_133447_74a7dddd.jpg",
-    "user_requirement": "",
-    "canvas": {
-      "width": 1270,
-      "height": 323
-    },
-    "fixed_elements": [
-      {
-        "text": "校园食堂陪餐",
-        "color": "#FFFFFF",
-        "bg_color": "#4FBDF9",
-        "round_radius": 11,
-        "font_size": 36,
-        "x_norm": 0.035,
-        "y_norm": 0.035,
-        "bg_opacity": 190,
-        "role": "title"
-      },
-      {
-        "text": "地点：{location}",
-        "color": "#FFFFFF",
-        "bg_color": "#4FBDF9",
-        "round_radius": 11,
-        "font_size": 28,
-        "x_norm": 0.035,
-        "y_norm": 0.115,
-        "bg_opacity": 190,
-        "role": "location"
-      }
-    ],
-    "dynamic_vars": {
-      "date": {
-        "label": "日期：",
-        "x_norm": 0.035,
-        "y_norm": 0.775,
-        "format": "%Y.%m.%d",
-        "color": "#FFFFFF",
-        "bg_color": "#424D54",
-        "round_radius": 11,
-        "font_size": 24,
-        "bg_opacity": 190
-      },
-      "time": {
-        "label": "时间：",
-        "x_norm": 0.035,
-        "y_norm": 0.835,
-        "format": "%H:%M",
-        "color": "#FFFFFF",
-        "bg_color": "#424D54",
-        "round_radius": 11,
-        "font_size": 24,
-        "bg_opacity": 190
-      },
-      "anti_counterfeit": {
-        "label": "防伪码：",
-        "x_norm": 0.035,
-        "y_norm": 0.895,
-        "format": "",
-        "color": "#FFFFFF",
-        "bg_color": "#424D54",
-        "round_radius": 11,
-        "font_size": 24,
-        "bg_opacity": 190
-      }
-    },
-    "meta": {
-      "created_by": "analyze_sample_image + rules",
-      "text_requires_review": true,
-      "sample_note": "未做 OCR，固定文字需人工确认；坐标与配色为规则采样初值。"
-    },
-    "updated_at": "2026-10-28 13:34:47"
-  },
-  "default_2": {
-    "template_name": "default_2",
-    "source_image": "D:\\DawnDine --Campus Canteen Logistics Agent\\uploads\\sample_20261028_133511_fefe16d3.jpg",
+  "测试1": {
+    "template_name": "测试1",
+    "source_image": "D:\\DawnDine --Campus Canteen Logistics Agent\\uploads\\sample_20261028_163311_abc23964.jpg",
     "user_requirement": "左下角显示打卡时间、深蓝色底色、白色文字，右下角带上防伪编码，包含地点信息",
     "canvas": {
       "width": 1270,
@@ -194,7 +120,155 @@
       "time": {
         "label": "时间：",
         "x_norm": 0.035,
-        "y_norm": 0.835,
+        "y_norm": 0.81,
+        "format": "%H:%M",
+        "color": "#FFFFFF",
+        "bg_color": "#424D54",
+        "round_radius": 11,
+        "font_size": 24,
+        "bg_opacity": 190
+      },
+      "anti_counterfeit": {
+        "label": "防伪码：",
+        "x_norm": 0.62,
+        "y_norm": 0.88,
+        "format": "",
+        "color": "#FFFFFF",
+        "bg_color": "#424D54",
+        "round_radius": 11,
+        "font_size": 24,
+        "bg_opacity": 190
+      }
+    },
+    "meta": {
+      "created_by": "analyze_sample_image + rules",
+      "text_requires_review": true,
+      "sample_note": "未做 OCR，固定文字需人工确认；坐标与配色为规则采样初值。 已按描述调整水印位置。"
+    },
+    "updated_at": "2026-10-28 16:33:11"
+  },
+  "测试1_2": {
+    "template_name": "测试1_2",
+    "source_image": "D:\\DawnDine --Campus Canteen Logistics Agent\\uploads\\sample_20261028_163533_319cbd50.jpg",
+    "user_requirement": "左下角显示打卡时间、深蓝色底色、白色文字，带上防伪编码，最右下角带上校园食堂陪餐，地点信息等",
+    "canvas": {
+      "width": 1270,
+      "height": 323
+    },
+    "fixed_elements": [
+      {
+        "text": "校园食堂陪餐",
+        "color": "#FFFFFF",
+        "bg_color": "#4FBDF9",
+        "round_radius": 11,
+        "font_size": 36,
+        "x_norm": 0.62,
+        "y_norm": 0.62,
+        "bg_opacity": 190,
+        "role": "title"
+      },
+      {
+        "text": "地点：{location}",
+        "color": "#FFFFFF",
+        "bg_color": "#4FBDF9",
+        "round_radius": 11,
+        "font_size": 28,
+        "x_norm": 0.62,
+        "y_norm": 0.7,
+        "bg_opacity": 190,
+        "role": "location"
+      }
+    ],
+    "dynamic_vars": {
+      "date": {
+        "label": "日期：",
+        "x_norm": 0.62,
+        "y_norm": 0.74,
+        "format": "%Y.%m.%d",
+        "color": "#FFFFFF",
+        "bg_color": "#424D54",
+        "round_radius": 11,
+        "font_size": 24,
+        "bg_opacity": 190
+      },
+      "time": {
+        "label": "时间：",
+        "x_norm": 0.62,
+        "y_norm": 0.81,
+        "format": "%H:%M",
+        "color": "#FFFFFF",
+        "bg_color": "#424D54",
+        "round_radius": 11,
+        "font_size": 24,
+        "bg_opacity": 190
+      },
+      "anti_counterfeit": {
+        "label": "防伪码：",
+        "x_norm": 0.62,
+        "y_norm": 0.88,
+        "format": "",
+        "color": "#FFFFFF",
+        "bg_color": "#424D54",
+        "round_radius": 11,
+        "font_size": 24,
+        "bg_opacity": 190
+      }
+    },
+    "meta": {
+      "created_by": "analyze_sample_image + rules",
+      "text_requires_review": true,
+      "sample_note": "未做 OCR，固定文字需人工确认；坐标与配色为规则采样初值。 已按描述调整水印位置。"
+    },
+    "updated_at": "2026-10-28 16:35:33"
+  },
+  "测试1_3": {
+    "template_name": "测试1_3",
+    "source_image": "D:\\DawnDine --Campus Canteen Logistics Agent\\uploads\\sample_20261028_163600_dc4f5c00.jpg",
+    "user_requirement": "左下角显示打卡时间、深蓝色底色、白色文字，带上防伪编码",
+    "canvas": {
+      "width": 1270,
+      "height": 323
+    },
+    "fixed_elements": [
+      {
+        "text": "校园食堂陪餐",
+        "color": "#FFFFFF",
+        "bg_color": "#4FBDF9",
+        "round_radius": 11,
+        "font_size": 36,
+        "x_norm": 0.035,
+        "y_norm": 0.035,
+        "bg_opacity": 190,
+        "role": "title"
+      },
+      {
+        "text": "地点：{location}",
+        "color": "#FFFFFF",
+        "bg_color": "#4FBDF9",
+        "round_radius": 11,
+        "font_size": 28,
+        "x_norm": 0.035,
+        "y_norm": 0.115,
+        "bg_opacity": 190,
+        "role": "location"
+      }
+    ],
+    "dynamic_vars": {
+      "date": {
+        "label": "日期：",
+        "x_norm": 0.035,
+        "y_norm": 0.775,
+        "format": "%Y.%m.%d",
+        "color": "#FFFFFF",
+        "bg_color": "#424D54",
+        "round_radius": 11,
+        "font_size": 24,
+        "bg_opacity": 190
+      },
+      "time": {
+        "label": "时间：",
+        "x_norm": 0.035,
+        "y_norm": 0.81,
         "format": "%H:%M",
         "color": "#FFFFFF",
         "bg_color": "#424D54",
@@ -217,8 +291,970 @@
     "meta": {
       "created_by": "analyze_sample_image + rules",
       "text_requires_review": true,
-      "sample_note": "未做 OCR，固定文字需人工确认；坐标与配色为规则采样初值。"
+      "sample_note": "未做 OCR，固定文字需人工确认；坐标与配色为规则采样初值。 已按描述调整水印位置。"
     },
-    "updated_at": "2026-10-28 13:35:11"
+    "updated_at": "2026-10-28 16:36:00"
+  },
+  "default": {
+    "template_name": "default",
+    "source_image": "D:\\DawnDine --Campus Canteen Logistics Agent\\uploads\\sample_20261028_214343_5614c0c1.jpg",
+    "user_requirement": "水印放最右下角，元素紧靠在一起",
+    "canvas": {
+      "width": 1270,
+      "height": 323
+    },
+    "fixed_elements": [
+      {
+        "text": "校园食堂陪餐",
+        "color": "#FFFFFF",
+        "bg_color": "#4FBDF9",
+        "round_radius": 11,
+        "font_size": 36,
+        "x_norm": 0.965,
+        "y_norm": 0.62,
+        "bg_opacity": 190,
+        "anchor": "bottom-right",
+        "role": "title"
+      },
+      {
+        "text": "地点：{location}",
+        "color": "#FFFFFF",
+        "bg_color": "#4FBDF9",
+        "round_radius": 11,
+        "font_size": 28,
+        "x_norm": 0.965,
+        "y_norm": 0.7,
+        "bg_opacity": 190,
+        "anchor": "bottom-right",
+        "role": "location"
+      }
+    ],
+    "dynamic_vars": {
+      "date": {
+        "label": "日期：",
+        "x_norm": 0.965,
+        "y_norm": 0.74,
+        "format": "%Y.%m.%d",
+        "color": "#FFFFFF",
+        "bg_color": "#424D54",
+        "round_radius": 11,
+        "font_size": 24,
+        "bg_opacity": 190,
+        "anchor": "bottom-right"
+      },
+      "time": {
+        "label": "时间：",
+        "x_norm": 0.965,
+        "y_norm": 0.81,
+        "format": "%H:%M",
+        "color": "#FFFFFF",
+        "bg_color": "#424D54",
+        "round_radius": 11,
+        "font_size": 24,
+        "bg_opacity": 190,
+        "anchor": "bottom-right"
+      },
+      "anti_counterfeit": {
+        "label": "防伪码：",
+        "x_norm": 0.965,
+        "y_norm": 0.88,
+        "format": "",
+        "color": "#FFFFFF",
+        "bg_color": "#424D54",
+        "round_radius": 11,
+        "font_size": 24,
+        "bg_opacity": 190,
+        "anchor": "bottom-right"
+      }
+    },
+    "meta": {
+      "created_by": "analyze_sample_image + rules",
+      "text_requires_review": true,
+      "sample_note": "未做 OCR，固定文字需人工确认；坐标与配色为规则采样初值。 已按描述调整水印位置/样式。",
+      "layout_gap": 2,
+      "format_backup": {
+        "fixed_elements": [
+          {
+            "text": "校园食堂陪餐",
+            "color": "#FFFFFF",
+            "bg_color": "#4FBDF9",
+            "round_radius": 11,
+            "font_size": 36,
+            "x_norm": 0.965,
+            "y_norm": 0.62,
+            "bg_opacity": 190,
+            "role": "title",
+            "anchor": "bottom-right"
+          },
+          {
+            "text": "地点：{location}",
+            "color": "#FFFFFF",
+            "bg_color": "#4FBDF9",
+            "round_radius": 11,
+            "font_size": 28,
+            "x_norm": 0.965,
+            "y_norm": 0.7,
+            "bg_opacity": 190,
+            "role": "location",
+            "anchor": "bottom-right"
+          }
+        ],
+        "dynamic_vars": {
+          "date": {
+            "label": "日期：",
+            "x_norm": 0.965,
+            "y_norm": 0.74,
+            "format": "%Y.%m.%d",
+            "color": "#FFFFFF",
+            "bg_color": "#424D54",
+            "round_radius": 11,
+            "font_size": 24,
+            "bg_opacity": 190,
+            "anchor": "bottom-right"
+          },
+          "time": {
+            "label": "时间：",
+            "x_norm": 0.965,
+            "y_norm": 0.81,
+            "format": "%H:%M",
+            "color": "#FFFFFF",
+            "bg_color": "#424D54",
+            "round_radius": 11,
+            "font_size": 24,
+            "bg_opacity": 190,
+            "anchor": "bottom-right"
+          },
+          "anti_counterfeit": {
+            "label": "防伪码：",
+            "x_norm": 0.965,
+            "y_norm": 0.88,
+            "format": "",
+            "color": "#FFFFFF",
+            "bg_color": "#424D54",
+            "round_radius": 11,
+            "font_size": 24,
+            "bg_opacity": 190,
+            "anchor": "bottom-right"
+          }
+        }
+      }
+    },
+    "updated_at": "2026-10-28 22:25:44"
+  },
+  "default_2": {
+    "template_name": "default_2",
+    "source_image": "D:\\DawnDine --Campus Canteen Logistics Agent\\uploads\\sample_20261028_222018_84253bee.jpg",
+    "user_requirement": "元素紧靠在一起，左下角显示打卡时间、深蓝色底色、白色文字，带上防伪编码，最右下角带上校园食堂陪餐，地点信息等",
+    "canvas": {
+      "width": 1270,
+      "height": 323
+    },
+    "fixed_elements": [
+      {
+        "text": "校园食堂陪餐",
+        "color": "#FFFFFF",
+        "bg_color": "#0B2E4F",
+        "round_radius": 11,
+        "font_size": 36,
+        "x_norm": 0.965,
+        "y_norm": 0.62,
+        "bg_opacity": 190,
+        "role": "title",
+        "anchor": "bottom-right"
+      },
+      {
+        "text": "地点：{location}",
+        "color": "#FFFFFF",
+        "bg_color": "#0B2E4F",
+        "round_radius": 11,
+        "font_size": 28,
+        "x_norm": 0.965,
+        "y_norm": 0.7,
+        "bg_opacity": 190,
+        "role": "location",
+        "anchor": "bottom-right"
+      }
+    ],
+    "dynamic_vars": {
+      "date": {
+        "label": "日期：",
+        "x_norm": 0.035,
+        "y_norm": 0.74,
+        "format": "%Y.%m.%d",
+        "color": "#FFFFFF",
+        "bg_color": "#0B2E4F",
+        "round_radius": 11,
+        "font_size": 24,
+        "bg_opacity": 190,
+        "anchor": "bottom-left"
+      },
+      "time": {
+        "label": "时间：",
+        "x_norm": 0.035,
+        "y_norm": 0.81,
+        "format": "%H:%M",
+        "color": "#FFFFFF",
+        "bg_color": "#0B2E4F",
+        "round_radius": 11,
+        "font_size": 24,
+        "bg_opacity": 190,
+        "anchor": "bottom-left"
+      },
+      "anti_counterfeit": {
+        "label": "防伪码：",
+        "x_norm": 0.035,
+        "y_norm": 0.88,
+        "format": "",
+        "color": "#FFFFFF",
+        "bg_color": "#0B2E4F",
+        "round_radius": 11,
+        "font_size": 24,
+        "bg_opacity": 190,
+        "anchor": "bottom-left"
+      }
+    },
+    "meta": {
+      "created_by": "analyze_sample_image + rules",
+      "text_requires_review": true,
+      "sample_note": "未做 OCR，固定文字需人工确认；坐标与配色为规则采样初值。 已按描述调整水印位置/样式。",
+      "layout_gap": 2
+    },
+    "updated_at": "2026-10-28 22:20:18"
+  },
+  "测试11": {
+    "template_name": "测试11",
+    "source_image": "D:\\DawnDine --Campus Canteen Logistics Agent\\uploads\\sample_20261029_235950_c2dfa321.jpg",
+    "user_requirement": "元素紧靠在一起，- 大字体： 11:12 \n\n- 下方完整日期： 2026.10.27 星期二 \n \n2. 地点信息（左下角）\n \n上海市闵行区梅陇镇·闵行区实验小学(景城校区)\n \n3. 右侧区域\n \n- 文字： 马克 、 水印枅机 （水印相机）\n\n- 黄色白底标签：真实时间\n \n4. 防伪编码（右下角）",
+    "canvas": {
+      "width": 1270,
+      "height": 323
+    },
+    "fixed_elements": [
+      {
+        "text": "呱呱呱呱呱呱",
+        "color": "#FFFFFF",
+        "bg_color": "#0B6E4F",
+        "round_radius": 11,
+        "font_size": 38,
+        "x_norm": 0.035,
+        "y_norm": 0.05,
+        "bg_opacity": 40,
+        "anchor": "bottom-left"
+      },
+      {
+        "text": "gggggggg",
+        "color": "#FFFFFF",
+        "bg_color": "#0B6E4F",
+        "round_radius": 11,
+        "font_size": 38,
+        "x_norm": 0.035,
+        "y_norm": 0.05,
+        "bg_opacity": 40,
+        "anchor": "bottom-left"
+      },
+      {
+        "text": "eeeeee",
+        "color": "#FFFFFF",
+        "bg_color": "#0B6E4F",
+        "round_radius": 11,
+        "font_size": 38,
+        "x_norm": 0.035,
+        "y_norm": 0.05,
+        "bg_opacity": 40,
+        "anchor": "bottom-left"
+      },
+      {
+        "text": "撒大苏打实打实",
+        "color": "#FFFFFF",
+        "bg_color": "#0B6E4F",
+        "round_radius": 11,
+        "font_size": 38,
+        "x_norm": 0.035,
+        "y_norm": 0.05,
+        "bg_opacity": 40,
+        "anchor": "bottom-right"
+      }
+    ],
+    "dynamic_vars": {},
+    "meta": {
+      "created_by": "analyze_sample_image + rules",
+      "text_requires_review": true,
+      "sample_note": "未做 OCR，固定文字需人工确认；坐标与配色为规则采样初值。 已按描述调整水印位置/样式。",
+      "layout_gap": 2,
+      "date_format": "cn",
+      "time_format": "hms",
+      "content_backup": {
+        "fixed_elements": [
+          {
+            "text": "校园食堂陪餐",
+            "color": "#FFFFFF",
+            "bg_color": "#0B6E4F",
+            "round_radius": 11,
+            "font_size": 38,
+            "x_norm": 0.965,
+            "y_norm": 0.035,
+            "bg_opacity": 40,
+            "role": "title",
+            "anchor": "top-right"
+          },
+          {
+            "text": "地点：{location}",
+            "color": "#FFFFFF",
+            "bg_color": "#0B6E4F",
+            "round_radius": 11,
+            "font_size": 29,
+            "x_norm": 0.965,
+            "y_norm": 0.7,
+            "bg_opacity": 40,
+            "role": "location",
+            "anchor": "bottom-right"
+          }
+        ],
+        "dynamic_vars": {
+          "date": {
+            "label": "日期：",
+            "x_norm": 0.965,
+            "y_norm": 0.74,
+            "format": "%Y.%m.%d",
+            "color": "#FFFFFF",
+            "bg_color": "#0B6E4F",
+            "round_radius": 11,
+            "font_size": 25,
+            "bg_opacity": 40,
+            "anchor": "bottom-right"
+          },
+          "time": {
+            "label": "时间：",
+            "x_norm": 0.965,
+            "y_norm": 0.81,
+            "format": "%H:%M",
+            "color": "#FFFFFF",
+            "bg_color": "#0B6E4F",
+            "round_radius": 11,
+            "font_size": 25,
+            "bg_opacity": 40,
+            "anchor": "bottom-right"
+          },
+          "anti_counterfeit": {
+            "label": "防伪码：",
+            "x_norm": 0.965,
+            "y_norm": 0.88,
+            "format": "",
+            "color": "#FFFFFF",
+            "bg_color": "#0B6E4F",
+            "round_radius": 11,
+            "font_size": 25,
+            "bg_opacity": 40,
+            "anchor": "bottom-right"
+          }
+        },
+        "format": "full",
+        "layout_gap": 2
+      },
+      "columns": [
+        {
+          "anchor": "bottom-left",
+          "lines": [
+            "呱呱呱呱呱呱",
+            "gggggggg",
+            "eeeeee"
+          ]
+        },
+        {
+          "anchor": "bottom-right",
+          "lines": [
+            "撒大苏打实打实"
+          ]
+        }
+      ],
+      "format_backup": {
+        "fixed_elements": [
+          {
+            "text": "呱呱呱呱呱呱",
+            "color": "#FFFFFF",
+            "bg_color": "#0B6E4F",
+            "round_radius": 11,
+            "font_size": 38,
+            "x_norm": 0.035,
+            "y_norm": 0.05,
+            "bg_opacity": 40,
+            "anchor": "bottom-left"
+          },
+          {
+            "text": "gggggggg",
+            "color": "#FFFFFF",
+            "bg_color": "#0B6E4F",
+            "round_radius": 11,
+            "font_size": 38,
+            "x_norm": 0.035,
+            "y_norm": 0.05,
+            "bg_opacity": 40,
+            "anchor": "bottom-left"
+          },
+          {
+            "text": "eeeeee",
+            "color": "#FFFFFF",
+            "bg_color": "#0B6E4F",
+            "round_radius": 11,
+            "font_size": 38,
+            "x_norm": 0.035,
+            "y_norm": 0.05,
+            "bg_opacity": 40,
+            "anchor": "bottom-left"
+          },
+          {
+            "text": "撒大苏打实打实",
+            "color": "#FFFFFF",
+            "bg_color": "#0B6E4F",
+            "round_radius": 11,
+            "font_size": 38,
+            "x_norm": 0.035,
+            "y_norm": 0.05,
+            "bg_opacity": 40,
+            "anchor": "bottom-right"
+          }
+        ],
+        "dynamic_vars": {}
+      }
+    },
+    "updated_at": "2026-10-30 00:35:35"
+  },
+  "测试11_2": {
+    "template_name": "测试11_2",
+    "source_image": "D:\\DawnDine --Campus Canteen Logistics Agent\\uploads\\sample_20261030_000640_b3b0dade.jpg",
+    "user_requirement": "元素紧靠在一起，- 大字体： 11:12 \n\n- 下方完整日期： 2026.10.27 星期二 \n \n2. 地点信息（左下角）\n \n上海市闵行区梅陇镇·闵行区实验小学(景城校区)\n \n3. 右侧区域\n \n- 文字： 马克 、 水印枅机 （水印相机）\n\n- 黄色白底标签：真实时间\n \n4. 防伪编码（右下角）",
+    "canvas": {
+      "width": 1270,
+      "height": 323
+    },
+    "fixed_elements": [
+      {
+        "text": "校园食堂陪餐",
+        "color": "#FFFFFF",
+        "bg_color": "#0B6E4F",
+        "round_radius": 11,
+        "font_size": 36,
+        "x_norm": 0.965,
+        "y_norm": 0.035,
+        "bg_opacity": 190,
+        "anchor": "top-right",
+        "role": "title"
+      },
+      {
+        "text": "地点：{location}",
+        "color": "#FFFFFF",
+        "bg_color": "#0B6E4F",
+        "round_radius": 11,
+        "font_size": 28,
+        "x_norm": 0.965,
+        "y_norm": 0.7,
+        "bg_opacity": 190,
+        "anchor": "bottom-right",
+        "role": "location"
+      }
+    ],
+    "dynamic_vars": {
+      "date": {
+        "label": "日期：",
+        "x_norm": 0.965,
+        "y_norm": 0.74,
+        "format": "%Y.%m.%d",
+        "color": "#FFFFFF",
+        "bg_color": "#0B6E4F",
+        "round_radius": 11,
+        "font_size": 24,
+        "bg_opacity": 190,
+        "anchor": "bottom-right"
+      },
+      "time": {
+        "label": "时间：",
+        "x_norm": 0.965,
+        "y_norm": 0.81,
+        "format": "%H:%M",
+        "color": "#FFFFFF",
+        "bg_color": "#0B6E4F",
+        "round_radius": 11,
+        "font_size": 24,
+        "bg_opacity": 190,
+        "anchor": "bottom-right"
+      },
+      "anti_counterfeit": {
+        "label": "防伪码：",
+        "x_norm": 0.965,
+        "y_norm": 0.88,
+        "format": "",
+        "color": "#FFFFFF",
+        "bg_color": "#0B6E4F",
+        "round_radius": 11,
+        "font_size": 24,
+        "bg_opacity": 190,
+        "anchor": "bottom-right"
+      }
+    },
+    "meta": {
+      "created_by": "analyze_sample_image + rules",
+      "text_requires_review": true,
+      "sample_note": "未做 OCR，固定文字需人工确认；坐标与配色为规则采样初值。 已按描述调整水印位置/样式。",
+      "layout_gap": 2,
+      "base_font_sizes": {
+        "fixed:title": 36,
+        "fixed:location": 28,
+        "dynamic:date": 24,
+        "dynamic:time": 24,
+        "dynamic:anti_counterfeit": 24
+      },
+      "format_backup": {
+        "fixed_elements": [
+          {
+            "text": "校园食堂陪餐",
+            "color": "#FFFFFF",
+            "bg_color": "#0B6E4F",
+            "round_radius": 11,
+            "font_size": 36,
+            "x_norm": 0.965,
+            "y_norm": 0.035,
+            "bg_opacity": 190,
+            "role": "title",
+            "anchor": "top-right"
+          },
+          {
+            "text": "地点：{location}",
+            "color": "#FFFFFF",
+            "bg_color": "#0B6E4F",
+            "round_radius": 11,
+            "font_size": 28,
+            "x_norm": 0.965,
+            "y_norm": 0.7,
+            "bg_opacity": 190,
+            "role": "location",
+            "anchor": "bottom-right"
+          }
+        ],
+        "dynamic_vars": {
+          "date": {
+            "label": "日期：",
+            "x_norm": 0.965,
+            "y_norm": 0.74,
+            "format": "%Y.%m.%d",
+            "color": "#FFFFFF",
+            "bg_color": "#0B6E4F",
+            "round_radius": 11,
+            "font_size": 24,
+            "bg_opacity": 190,
+            "anchor": "bottom-right"
+          },
+          "time": {
+            "label": "时间：",
+            "x_norm": 0.965,
+            "y_norm": 0.81,
+            "format": "%H:%M",
+            "color": "#FFFFFF",
+            "bg_color": "#0B6E4F",
+            "round_radius": 11,
+            "font_size": 24,
+            "bg_opacity": 190,
+            "anchor": "bottom-right"
+          },
+          "anti_counterfeit": {
+            "label": "防伪码：",
+            "x_norm": 0.965,
+            "y_norm": 0.88,
+            "format": "",
+            "color": "#FFFFFF",
+            "bg_color": "#0B6E4F",
+            "round_radius": 11,
+            "font_size": 24,
+            "bg_opacity": 190,
+            "anchor": "bottom-right"
+          }
+        }
+      },
+      "format": "full"
+    },
+    "updated_at": "2026-10-30 00:06:40"
+  },
+  "测试1_4": {
+    "template_name": "测试1_4",
+    "source_image": "D:\\DawnDine --Campus Canteen Logistics Agent\\uploads\\sample_20261030_200537_c1126a6c.jpg",
+    "user_requirement": "元素紧靠在一起，参考样图布局：左上角显示打卡时间（浅蓝色圆角背景，白色大号粗体字）；时间下方依次显示日期（白色字）和详细地点（白色字，可换行）；右侧偏下位置显示品牌名称及“真实时间”标签（白字及白底黑字标签）；右下角显示防伪码（白色小字）。整体文字均为白色，无深色底板，排版紧凑。",
+    "canvas": {
+      "width": 1270,
+      "height": 323
+    },
+    "fixed_elements": [
+      {
+        "text": "校园食堂陪餐",
+        "color": "#FFFFFF",
+        "bg_color": "#111111",
+        "round_radius": 11,
+        "font_size": 36,
+        "x_norm": 0.965,
+        "y_norm": 0.62,
+        "bg_opacity": 70,
+        "anchor": "bottom-right",
+        "role": "title"
+      },
+      {
+        "text": "地点：{location}",
+        "color": "#FFFFFF",
+        "bg_color": "#111111",
+        "round_radius": 11,
+        "font_size": 28,
+        "x_norm": 0.965,
+        "y_norm": 0.7,
+        "bg_opacity": 70,
+        "anchor": "bottom-right",
+        "role": "location"
+      }
+    ],
+    "dynamic_vars": {
+      "date": {
+        "label": "日期：",
+        "x_norm": 0.965,
+        "y_norm": 0.74,
+        "format": "%Y.%m.%d",
+        "color": "#FFFFFF",
+        "bg_color": "#111111",
+        "round_radius": 11,
+        "font_size": 24,
+        "bg_opacity": 70,
+        "anchor": "bottom-right"
+      },
+      "time": {
+        "label": "时间：",
+        "x_norm": 0.965,
+        "y_norm": 0.81,
+        "format": "%H:%M",
+        "color": "#FFFFFF",
+        "bg_color": "#111111",
+        "round_radius": 11,
+        "font_size": 24,
+        "bg_opacity": 70,
+        "anchor": "bottom-right"
+      }
+    },
+    "meta": {
+      "created_by": "analyze_sample_image + rules",
+      "text_requires_review": true,
+      "sample_note": "未做 OCR，固定文字需人工确认；坐标与配色为规则采样初值。 已按描述调整水印位置/样式。",
+      "layout_gap": 2,
+      "base_font_sizes": {
+        "fixed:title": 36,
+        "fixed:location": 28,
+        "dynamic:date": 24,
+        "dynamic:time": 24,
+        "dynamic:anti_counterfeit": 24
+      },
+      "format_backup": {
+        "fixed_elements": [
+          {
+            "text": "校园食堂陪餐",
+            "color": "#FFFFFF",
+            "bg_color": "#111111",
+            "round_radius": 11,
+            "font_size": 36,
+            "x_norm": 0.965,
+            "y_norm": 0.62,
+            "bg_opacity": 70,
+            "role": "title",
+            "anchor": "bottom-right"
+          },
+          {
+            "text": "地点：{location}",
+            "color": "#FFFFFF",
+            "bg_color": "#111111",
+            "round_radius": 11,
+            "font_size": 28,
+            "x_norm": 0.965,
+            "y_norm": 0.7,
+            "bg_opacity": 70,
+            "role": "location",
+            "anchor": "bottom-right"
+          }
+        ],
+        "dynamic_vars": {
+          "date": {
+            "label": "日期：",
+            "x_norm": 0.965,
+            "y_norm": 0.74,
+            "format": "%Y.%m.%d",
+            "color": "#FFFFFF",
+            "bg_color": "#111111",
+            "round_radius": 11,
+            "font_size": 24,
+            "bg_opacity": 70,
+            "anchor": "bottom-right"
+          },
+          "time": {
+            "label": "时间：",
+            "x_norm": 0.965,
+            "y_norm": 0.81,
+            "format": "%H:%M",
+            "color": "#FFFFFF",
+            "bg_color": "#111111",
+            "round_radius": 11,
+            "font_size": 24,
+            "bg_opacity": 70,
+            "anchor": "bottom-right"
+          },
+          "anti_counterfeit": {
+            "label": "防伪码：",
+            "x_norm": 0.965,
+            "y_norm": 0.88,
+            "format": "",
+            "color": "#FFFFFF",
+            "bg_color": "#111111",
+            "round_radius": 11,
+            "font_size": 24,
+            "bg_opacity": 70,
+            "anchor": "bottom-right"
+          }
+        }
+      },
+      "format": "standard"
+    },
+    "updated_at": "2026-10-30 20:05:38"
+  },
+  "测试1_5": {
+    "template_name": "测试1_5",
+    "source_image": "D:\\DawnDine --Campus Canteen Logistics Agent\\uploads\\sample_20261030_200539_b0c0e415.jpg",
+    "user_requirement": "元素紧靠在一起，参考样图布局：左上角显示打卡时间（浅蓝色圆角背景，白色大号粗体字）；时间下方依次显示日期（白色字）和详细地点（白色字，可换行）；右侧偏下位置显示品牌名称及“真实时间”标签（白字及白底黑字标签）；右下角显示防伪码（白色小字）。整体文字均为白色，无深色底板，排版紧凑。",
+    "canvas": {
+      "width": 1270,
+      "height": 323
+    },
+    "fixed_elements": [
+      {
+        "text": "食堂学院赔偿",
+        "color": "#FFFFFF",
+        "bg_color": "#111111",
+        "round_radius": 11,
+        "font_size": 36,
+        "x_norm": 0.035,
+        "y_norm": 0.05,
+        "bg_opacity": 70,
+        "anchor": "bottom-right"
+      },
+      {
+        "text": "网上大学",
+        "color": "#FFFFFF",
+        "bg_color": "#111111",
+        "round_radius": 11,
+        "font_size": 36,
+        "x_norm": 0.035,
+        "y_norm": 0.05,
+        "bg_opacity": 70,
+        "anchor": "bottom-right"
+      },
+      {
+        "text": "其实大润发",
+        "color": "#FFFFFF",
+        "bg_color": "#111111",
+        "round_radius": 11,
+        "font_size": 36,
+        "x_norm": 0.035,
+        "y_norm": 0.05,
+        "bg_opacity": 70,
+        "anchor": "bottom-right"
+      },
+      {
+        "text": "防伪码：SDQOP189TI",
+        "color": "#FFFFFF",
+        "bg_color": "#111111",
+        "round_radius": 11,
+        "font_size": 36,
+        "x_norm": 0.035,
+        "y_norm": 0.05,
+        "bg_opacity": 70,
+        "anchor": "bottom-right"
+      },
+      {
+        "text": "张三",
+        "color": "#FFFFFF",
+        "bg_color": "#111111",
+        "round_radius": 11,
+        "font_size": 36,
+        "x_norm": 0.035,
+        "y_norm": 0.05,
+        "bg_opacity": 70,
+        "anchor": "bottom-left"
+      },
+      {
+        "text": "直播",
+        "color": "#FFFFFF",
+        "bg_color": "#111111",
+        "round_radius": 11,
+        "font_size": 36,
+        "x_norm": 0.035,
+        "y_norm": 0.05,
+        "bg_opacity": 70,
+        "anchor": "bottom-left"
+      }
+    ],
+    "dynamic_vars": {},
+    "meta": {
+      "created_by": "analyze_sample_image + rules",
+      "text_requires_review": true,
+      "sample_note": "未做 OCR，固定文字需人工确认；坐标与配色为规则采样初值。 已按描述调整水印位置/样式。",
+      "layout_gap": 2,
+      "content_backup": {
+        "fixed_elements": [
+          {
+            "text": "校园食堂陪餐",
+            "color": "#FFFFFF",
+            "bg_color": "#111111",
+            "round_radius": 11,
+            "font_size": 36,
+            "x_norm": 0.965,
+            "y_norm": 0.62,
+            "bg_opacity": 70,
+            "role": "title",
+            "anchor": "bottom-right"
+          },
+          {
+            "text": "地点：{location}",
+            "color": "#FFFFFF",
+            "bg_color": "#111111",
+            "round_radius": 11,
+            "font_size": 28,
+            "x_norm": 0.965,
+            "y_norm": 0.7,
+            "bg_opacity": 70,
+            "role": "location",
+            "anchor": "bottom-right"
+          }
+        ],
+        "dynamic_vars": {
+          "date": {
+            "label": "日期：",
+            "x_norm": 0.965,
+            "y_norm": 0.74,
+            "format": "%Y.%m.%d",
+            "color": "#FFFFFF",
+            "bg_color": "#111111",
+            "round_radius": 11,
+            "font_size": 24,
+            "bg_opacity": 70,
+            "anchor": "bottom-right"
+          },
+          "time": {
+            "label": "时间：",
+            "x_norm": 0.965,
+            "y_norm": 0.81,
+            "format": "%H:%M",
+            "color": "#FFFFFF",
+            "bg_color": "#111111",
+            "round_radius": 11,
+            "font_size": 24,
+            "bg_opacity": 70,
+            "anchor": "bottom-right"
+          },
+          "anti_counterfeit": {
+            "label": "防伪码：",
+            "x_norm": 0.965,
+            "y_norm": 0.88,
+            "format": "",
+            "color": "#FFFFFF",
+            "bg_color": "#111111",
+            "round_radius": 11,
+            "font_size": 24,
+            "bg_opacity": 70,
+            "anchor": "bottom-right"
+          }
+        },
+        "format": "standard",
+        "layout_gap": 2
+      },
+      "columns": [
+        {
+          "anchor": "bottom-right",
+          "lines": [
+            "食堂学院赔偿",
+            "网上大学",
+            "其实大润发",
+            "防伪码：SDQOP189TI"
+          ]
+        },
+        {
+          "anchor": "bottom-left",
+          "lines": [
+            "张三",
+            "直播"
+          ]
+        }
+      ],
+      "format_backup": {
+        "fixed_elements": [
+          {
+            "text": "食堂学院赔偿",
+            "color": "#FFFFFF",
+            "bg_color": "#111111",
+            "round_radius": 11,
+            "font_size": 36,
+            "x_norm": 0.035,
+            "y_norm": 0.05,
+            "bg_opacity": 70,
+            "anchor": "bottom-right"
+          },
+          {
+            "text": "网上大学",
+            "color": "#FFFFFF",
+            "bg_color": "#111111",
+            "round_radius": 11,
+            "font_size": 36,
+            "x_norm": 0.035,
+            "y_norm": 0.05,
+            "bg_opacity": 70,
+            "anchor": "bottom-right"
+          },
+          {
+            "text": "其实大润发",
+            "color": "#FFFFFF",
+            "bg_color": "#111111",
+            "round_radius": 11,
+            "font_size": 36,
+            "x_norm": 0.035,
+            "y_norm": 0.05,
+            "bg_opacity": 70,
+            "anchor": "bottom-right"
+          },
+          {
+            "text": "防伪码：SDQOP189TI",
+            "color": "#FFFFFF",
+            "bg_color": "#111111",
+            "round_radius": 11,
+            "font_size": 36,
+            "x_norm": 0.035,
+            "y_norm": 0.05,
+            "bg_opacity": 70,
+            "anchor": "bottom-right"
+          },
+          {
+            "text": "张三",
+            "color": "#FFFFFF",
+            "bg_color": "#111111",
+            "round_radius": 11,
+            "font_size": 36,
+            "x_norm": 0.035,
+            "y_norm": 0.05,
+            "bg_opacity": 70,
+            "anchor": "bottom-left"
+          },
+          {
+            "text": "直播",
+            "color": "#FFFFFF",
+            "bg_color": "#111111",
+            "round_radius": 11,
+            "font_size": 36,
+            "x_norm": 0.035,
+            "y_norm": 0.05,
+            "bg_opacity": 70,
+            "anchor": "bottom-left"
+          }
+        ],
+        "dynamic_vars": {}
+      }
+    },
+    "updated_at": "2026-10-30 20:10:32"
   }
 }

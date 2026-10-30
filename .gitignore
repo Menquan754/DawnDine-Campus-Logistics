@@ -1,52 +1,79 @@
-# 环境与密钥
+# =============================================================================
+# DawnDine · 版本库忽略规则
+# 原则：只提交源码、测试、文档与 data/knowledge 内容资产；
+#       运行期产物、密钥、虚拟环境、索引缓存一律不入库。
+# =============================================================================
+
+# --- 环境与密钥 ---------------------------------------------------------
 .env
 .env.*
 !.env.example
+*.pem
+*.key
+
+# --- Python 虚拟环境与缓存 ----------------------------------------------
 .venv/
 venv/
-
-# Python 缓存
+env/
 __pycache__/
 *.py[cod]
 *$py.class
 .mypy_cache/
 .ruff_cache/
 .pytest_cache/
+.hypothesis/
 .coverage
+.coverage.*
 htmlcov/
+coverage.xml
 
-# PyCharm / 编辑器（保留运行配置）
-.idea/*
-!.idea/runConfigurations/
-!.idea/runConfigurations/*.xml
+# --- 构建产物 ------------------------------------------------------------
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+
+# --- 编辑器与 IDE --------------------------------------------------------
+.idea/
 .vscode/
+.workbuddy/
+*.swp
+*.swo
 
-# 运行产物
-watermarked/*
-!watermarked/.gitkeep
+# --- 运行期数据与产物 ----------------------------------------------------
+# SQLite 数据库及其 WAL/SHM/备份
+data/*.db
+data/*.db-*
+data/*.bak*
+data/*.sqlite3
+# Chroma 向量索引（可由知识文件重建）
+data/chroma/
+data/chroma_db/
+chroma_db/
+# 知识图谱 HTML 每次刷新都会重写
+data/kg.html
+# 上传、水印成品、导出表
 uploads/*
 !uploads/.gitkeep
-data/chroma/
-data/templates/*.json
-!data/templates/.gitkeep
-data/*.db
-data/*.db-wal
-data/*.db-shm
-*.log
+watermarked/*
+!watermarked/.gitkeep
+exports/*
+!exports/.gitkeep
+.runlogs/
 logs/
+*.log
 .gradio/
 
-# 操作系统
+# --- 临时与截图 ----------------------------------------------------------
+.screenshots/
+.tmp/
+tmp/
+*.bak
+*.tmp
+~$*
+
+# --- 操作系统 ------------------------------------------------------------
 .DS_Store
 Thumbs.db
 desktop.ini
-
-# git 基线补齐（2026-10-28）
-*.pyc
-.idea/
-uploads/
-watermarked/
-data/*.db*
-!data/templates/*.json
-.workbuddy/
-
