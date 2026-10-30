@@ -59,7 +59,7 @@ echo    1. Double-click scripts\windows\config-key.bat and fill DASHSCOPE_API_KE
 echo    2. Double-click scripts\windows\start.bat
 echo ============================================================
 echo.
-pause
+if /I not "%DAWNDINE_SILENT_SETUP%"=="1" pause
 exit /b 0
 
 :no_python

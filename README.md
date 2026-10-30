@@ -29,6 +29,8 @@ scripts\windows\
 ```
 
 首次使用顺序：`首次安装.bat` → `配置APIKey.bat` → `启动DawnDine.bat`。
+也可以直接双击 `启动DawnDine.bat`：检测到缺少 `.venv` 时会自动先执行首次安装。
+Key 不是必填：不配置 `.env` 也能打开工作台，每位访客在页面底部“设置”里填写自己的 Key 即可。
 根目录保留同名 `.bat` 作为薄封装，双击后直接调用 `scripts\windows\` 下的脚本。
 
 ### 1.2 终端命令

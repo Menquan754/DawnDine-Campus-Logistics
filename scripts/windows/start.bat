@@ -10,10 +10,15 @@ set "PYTHONUTF8=1"
 where uv >nul 2>nul
 if errorlevel 1 goto :no_uv
 
-if not exist ".venv" goto :need_setup
+if not exist ".venv" (
+    echo [INFO] .venv not found. Running first-time setup now...
+    set "DAWNDINE_SILENT_SETUP=1"
+    call "%~dp0setup.bat"
+    if not exist ".venv" goto :need_setup
+)
 if not exist ".env" (
-    echo [WARN] .env not found. Chat and knowledge retrieval need DASHSCOPE_API_KEY.
-    echo        Run scripts\windows\config-key.bat, then restart.
+    echo [WARN] .env not found. The page still opens; each visitor can enter
+    echo        their own DashScope Key in the Settings dialog.
     echo.
 )
 
