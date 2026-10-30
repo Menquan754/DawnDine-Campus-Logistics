@@ -120,6 +120,7 @@ DawnDine --Campus Canteen Logistics Agent/
 ├── .python-version
 ├── .env.example / .env            # .env 已 gitignore
 ├── README.md / ARCHITECTURE.md / CHANGELOG.md
+├── 首次安装.bat                   # 薄封装 → scripts/windows
 ├── 启动DawnDine.bat               # 薄封装 → scripts/windows
 ├── 配置APIKey.bat                 # 薄封装 → scripts/windows
 ├── scripts/
