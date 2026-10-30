@@ -56,10 +56,17 @@ _warned_missing = False
 
 
 def get_env_api_key() -> str:
-    """读取 .env / 进程环境中的百炼 Key；没有则返回空字符串。"""
+    """读取 .env / 进程环境中的百炼 Key；没有则返回空字符串。
+
+    `.env.example` 里的占位符与内部占位 Key 视同未配置，避免把
+    "replace-with-your-dashscope-key" 当成真实 Key 去请求，触发 401。
+    """
 
     load_dotenv(dotenv_path=ENV_FILE, override=False)
-    return (os.getenv(DASHSCOPE_API_KEY_ENV) or "").strip()
+    raw = (os.getenv(DASHSCOPE_API_KEY_ENV) or "").strip()
+    if raw in {"replace-with-your-dashscope-key", LLM_PLACEHOLDER_API_KEY}:
+        return ""
+    return raw
 
 
 def allow_env_key() -> bool:
